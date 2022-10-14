@@ -1,0 +1,340 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*
+1. từ ngoài vào trong
+2. trên xuống dưới
+3. tổng quan đến chi tiết
+*/
+
+/*
+1. Vị trí
+2. kích thước (width, height)
+3. màu sắc
+4. kiểu dáng
+*/
+
+/* Comon */
+
+
+.text-white {
+    color:#fff !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.col {
+    float:left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.333333%;
+}
+
+.col-for {
+    width: 25%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-ful {
+    width: 100%;
+}
+
+.btn {
+    color: #58b5e7;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+#main {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* header */
+.header {
+    height: 50px;
+    background-color: #58b5e7;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid #fff;
+    z-index: 1;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo ul li img{
+    height: 50px;
+    padding: 0 24px;
+    cursor: pointer;
+}  
+
+.menu {
+    display:inline-block;
+    float:right;
+    padding-right: 5%;
+}
+
+.nav {
+    display:inline-block;
+    float:right;
+}
+.nav, .subnav {
+    list-style-type: none;
+}
+.nav > li { 
+    display: inline-block;
+}
+.nav li{
+    position: relative;
+}
+.nav > li > a {
+    color: #fff;
+    text-transform:uppercase;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 24px;
+    display:block;
+}
+
+.nav li:hover .subnav {
+    display:block;
+}
+
+.nav .subnav li:hover a,
+.nav > li:hover > a{
+    color:#000;
+    background-color: #ccc;
+}
+
+
+.nav .subnav {
+    display: none;
+    position:absolute;
+    background-color: #fff;
+    color:#000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	width: 275px;
+    height: 300px;
+    overflow: scroll;
+}
+
+.nav .subnav a {
+    color: #000;
+}
+
+.nav .nav-arrow {
+    font-size: 12px;
+}
+
+/* anh truong */
+.slider {
+    padding-top:50%;
+    background: url(https://pcorp.com.vn/wp-content/uploads/2021/07/162451434_3835417929884095_8209561304166809284_n.jpeg) top center / cover no-repeat;
+}
+
+/* Noi dung */
+.content {
+}
+
+.content .content-section {
+    width: 880px;
+    padding: 64px 0px 112px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.content .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.content .member-list {
+    margin-top: 48px;
+    
+}
+
+
+.content .member-name {
+    font-size: 15px;
+}
+
+.content .member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Cơ sỏ vật chất */
+.csvc {
+    background-color: #58b5e7;
+}
+
+.places-list {
+    margin-top: 32px;
+}
+
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {   
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Ngành */
+.nganh-list {
+    margin-top: 48px;   
+}
+
+.nganh-body p a{
+    color: #000;    
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: 30%;
+    text-decoration: none;
+    border-bottom: 2px solid #58b5e7;
+}
+
+.nganh-body p:hover a {
+    color:rgb(255, 102, 0);
+    border-bottom: 2px solid rgb(255, 102, 0);
+}
+
+
+
+
+
+
+/* tuyen sinh */
+#TuyenSinh {
+    background-color:#58b5e7;
+}
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.btn-submit {  
+    float:right;
+    width: 30%;
+}
+
+/* footer */
+.footer {
+    padding: 20px  18%;
+    background-color: #757575;
+    color: #fff;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.footer .row a:hover {
+    color:rgb(255, 102, 0);
+}
